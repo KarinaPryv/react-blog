@@ -22,7 +22,6 @@ class _BlogService {
     getCommentsByPostId = (id) => {
         return axios.get(`${baseUrl}${POSTS_ENDPOINT}/${id}${COMMENTS_ENDPOINT}`);
     }
-    // https://jsonplaceholder.typicode.com/posts/1/comments
 }
 
 const BlogService = new _BlogService;
